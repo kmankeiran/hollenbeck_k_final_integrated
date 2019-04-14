@@ -1,1 +1,3 @@
-# hollenbeck_k_final_integrated
+# TRAA Website Assignment
+
+This assignment was made by Keiran Hollenbeck, I decided to restart from scratch. I redesigned the pages in photoshop, both for media and for desktop; you can find them in the assets page. I made an animation where all the content from the page fades in everytime you load the page. The pages I worked on are the Home page, the Projects page, and the Contact page. Unlike last time, I did add a contact form to the page. I did a few different things to the page compared to the wireframes. In the footer, I added icons that link to the specific website: Facebook, Twitter, and Instagram. I added the same hover effect in the navigation bar like last time from the mid term.
