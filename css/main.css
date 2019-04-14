@@ -1,0 +1,915 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+@font-face {
+    font-family: 'maiandra_gdregular';
+    src: url('../fonts/maiandra_gd_regular-webfont.woff2') format('woff2'),
+         url('../fonts/maiandra_gd_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'modern_no20';
+	src: url('../fonts/modern_no._20-webfont.woff2') format('woff2'),
+		 url('../fonts/modern_no._20-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+.hidden
+{
+	display: none;
+}
+
+/* General rules - scales images, videos to size of container */
+img, embed, object, video {
+  max-width: 100%; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/*Fix for scaling of images IE*/
+img {
+  -ms-interpolation-mode: bicubic; }
+
+  body
+  {
+  	font-family: Helvetica, Arial, sans-serif;
+  }
+
+  p
+  {
+  	line-height: 22px;
+  }
+
+  @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.container
+{
+	max-width: 1200px;
+	/*min-width: 320px*/
+	padding: 0 15px 0 15px;
+	animation-name: fadeIn;
+	animation-duration: 5s;
+}
+
+.containerFull
+{
+	max-width: 1200px;
+}
+
+
+/*Header*/
+.mainHeader
+{
+	background: url(../images/header_image-small.jpg) center no-repeat;
+	height: 200px;
+}
+
+.mainHeader img
+{
+	height: 150px;
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+#mainNav
+{
+  display: flex;
+  flex-direction: column;
+/*  margin-top: 5px;*/
+}
+
+#mainNav button
+{
+	/*need to change path to images*/
+  background: url(../images/burger.svg) center no-repeat;
+  width: 30px;
+  height: 30px;
+  border: 0px;
+  transition: all 400ms ease;
+  margin-left: auto;
+}
+
+#mainNav button.expanded
+{
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#logo
+{
+	background: url(../images/traa_logo.svg)
+}
+
+#logo.hideLogo
+{
+	display: none;
+}
+
+#mainNav li a
+{
+  display: block;
+  padding: 10px 0 10px 0;
+  color: #fefefe;
+  text-align: center;
+  text-decoration: none;
+}
+
+#mainNav li
+{
+  border-bottom: 1px solid #efefef;
+}
+
+#mainNav li:first-child
+{
+  border-top: 1px solid #efefef;
+}
+
+#mainNav li:last-child
+{
+  margin-bottom: 10px;
+}
+
+
+#burgerCon
+{
+  margin-top: 20px;
+  display: none;
+}
+
+
+#burgerCon.slideToggle
+{
+  display: block;
+}
+
+/*Home Page*/
+
+.videoLink
+{
+	display: none;
+}
+
+#welcome h2
+{
+	font-family: 'modern_no20';
+	font-size: 24px;
+	color: #006600;
+	/*text-align: center;*/
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+#welcome p
+{
+	font-family: 'maiandra_gdregular';
+	font-size: 18px;
+	margin-bottom: 20px;
+	/*margin-left: 70px;
+	margin-right: 70px;*/
+}
+
+#welcome p span
+{
+	color: #595959;
+}
+
+#mediaLink
+{
+	font-family: 'modern_no20';
+	font-size: 24px;
+	color: #006600;
+	text-decoration: none;
+}
+
+#traaGear img
+{
+	/*only need to set width in CSS, use max*/
+	/*max-width: 260px;*/
+	/*height: 190px;*/
+	margin: 30px auto 0 auto;
+	display: block;
+}
+
+#traaGear h2
+{
+	font-family: 'modern_no20';
+	font-size: 24px;
+	color: #006600;
+	/*text-align: center;*/
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+#traaGear p
+{
+	font-family: 'maiandra_gdregular';
+	font-size: 18px;
+	margin-bottom: 30px;
+	/*margin-left: 70px;
+	margin-right: 70px;*/
+}
+
+#traaGear p span
+{
+	color: #595959;
+}
+
+#executiveSections
+{
+	/*display: flex;
+	flex-direction: row;*/
+	margin-bottom: 35px;
+}
+
+#executives h2
+{
+	font-family: 'modern_no20';
+	font-size: 24px;
+	color: #006600;
+	/*text-align: center;*/
+	margin-bottom: 20px;
+}
+
+#executiveSections h2
+{
+	font-family: 'modern_no20';
+	font-size: 24px;
+	color: #006600;
+	/*text-align: center;*/
+	/*margin-bottom: 20px;*/
+	margin-bottom: 0px;
+}
+
+#executiveSections p
+{
+	font-family: 'maiandra_gdregular';
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+#volunteer h2
+{
+	font-family: 'modern_no20';
+	font-size: 24px;
+	color: #006600;
+	/*text-align: center;*/
+	margin-bottom: 20px;
+}
+
+#volunteer p
+{
+	font-family: 'maiandra_gdregular';
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 600px) {
+
+	.mainHeader
+	{
+		background: url(../images/header_image-medium.jpg) center no-repeat;
+		height: 246px;
+	}
+
+	.mainHeader img
+	{
+		margin-top: 30px
+	}
+
+	#executiveSections
+	{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 35px;
+	}
+
+/*grab all of the divs in the flex container and*/
+	#executiveSections div
+	{
+		flex: 1 1 auto;
+		/*text-align: center;*/
+	}
+
+	#volunteerSections
+	{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 35px;
+	}
+
+	#volunteerSections div
+	{
+		flex: 1 1 auto;
+		padding-top:1px;
+		
+	}
+
+	#volunteerSections .rowOne p, #volunteerSections .rowTwo p
+	{
+		margin-bottom: 20px;
+	}
+	
+}
+
+@media screen and (min-width: 1020px){
+
+	.containerFull
+	{
+		margin: 0 auto 0 auto;
+		max-width: 1200px;
+	}
+
+	.container
+	{
+		margin: 70px auto 0 auto;
+		max-width: 1200px;
+	}
+
+	.mainHeader
+	{
+		display: flex;
+		flex-direction: column;
+		background: url(../images/header_image-large.jpg) center no-repeat;
+		height: 246px;
+	}
+
+	#logo
+	{
+		order: -1;
+	}
+	#burgerCon
+	{
+		display: block;
+	}
+
+	#mainNav button
+	{
+		display: none;
+	}
+
+	#mainNav
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		height: 60px;
+	}
+
+	#mainNav li
+	{
+		border-bottom: none;
+	}
+
+	#mainNav li:first-child
+	{
+		border-top: none;
+	}
+
+	#mainNav ul
+	{
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: row;
+	}
+
+	#mainNav ul li a
+	{
+		display: block;
+		text-align: center;
+		margin-left: 30px;
+		margin-top: 20px;
+		width: 85px;
+		padding: 6px;
+		color: #fff;
+		font-size: 14px;
+		transition: all .3s ease;
+	}
+
+	#mainNav ul li a:hover {
+		background-color: #006600;
+		border-radius: 2px;
+	}
+
+	#welcome
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#welcome div
+	{
+		margin-left: 100px;
+		width: 675px;
+		height: 385px;
+	}
+
+
+	.videoLink
+	{
+		display: block;
+		height: 190px;
+		width: 260px;
+	}
+
+	#mediaLink
+	{
+		display: none;
+	}
+
+	#traaGear
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#traaGear img
+	{
+		width: 445px;
+		height: 360px;
+	}
+
+	#traaGear div
+	{
+		width: 545px;
+		height: 385px;
+		order: -1;
+		margin-bottom: 40px;
+		margin-right: 40px;
+		margin-top: 40px;
+	}
+
+	#executives h2
+	{
+		margin-bottom: 20px;
+	}
+
+	#volunteer h2
+	{
+		margin-bottom: 20px;
+	}
+
+
+	#footerNav
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		height: 60px;
+	}
+
+	#footerNav li
+	{
+		border-bottom: none;
+	}
+
+	#footerNav li:first-child
+	{
+		border-top: none;
+	}
+
+	#footerNav ul
+	{
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: row;
+	}
+
+	#footerNav ul li a
+	{
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		margin-left: 30px;
+		margin-top: 20px;
+		width: 85px;
+		padding: 8px;
+		color: #595959;
+		font-size: 14px;
+		transition: all .3s ease;
+	}
+
+	#footerNav ul li a:hover {
+		color: #fff;
+		background-color: #006600;
+		border-radius: 2px;
+	}
+
+	#footerIcons
+	{
+		display: none;
+	}
+}
+
+/*Project Page*/
+
+#handsOn h2
+{
+	color: #006600;
+	font-family: 'modern_no20';
+	font-size: 24px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+#handsOn p
+{
+	font-family: 'maiandra_gdregular';
+	font-size: 18px;
+}
+
+#salmonId h2
+{
+	color: #006600;
+	font-family: 'modern_no20';
+	font-size: 24px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+#salmonId p
+{
+	font-family: 'maiandra_gdregular';
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+#hatcheryPicOne
+{
+	margin: 30px auto 0 auto;
+	display: block;
+}
+
+#hatcheryPicTwo
+{
+	display: none;
+}
+
+#hatcheryPicThree
+{
+	display: none;
+}
+
+#troutHatchery p
+{
+	font-family: 'maiandra_gdregular';
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#paragraphThree
+{
+	color: #595959;
+}
+
+#troutHatchery span
+{
+	display: none;
+}
+
+#eggIncubationOne p
+{
+	font-family: 'maiandra_gdregular';
+	font-size: 18px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#incubationPicOne
+{
+	display: none;
+}
+
+#incubationPicTwo
+{
+	margin: 30px auto 0 auto;
+	display: block;
+}
+
+#incubationPicThree
+{
+	display: none;
+}
+
+#incubationPicFour
+{
+	margin: 30px auto 0 auto;
+	display: block;
+}
+
+#eggIncubationTwo p
+{
+	display: none;
+}
+
+#waterSpring
+{
+	display: none;
+}
+
+@media screen and (min-width: 1020px){
+
+	.container
+	{
+		width: 1160px;
+	}
+
+	#handsOn h2
+	{
+		margin-bottom: 45px;
+		text-align: left;
+	}
+
+	#handsOn p
+	{
+		margin-bottom: 45px;
+	}
+
+	#salmonId h2
+	{
+		margin-bottom: 45px;
+		text-align: left;
+	}
+
+	#salmonId p
+	{
+		margin-bottom: 50px;
+	}
+
+	#hatcheryImages
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#hatcheryPicOne
+	{
+		width: 260px;
+		height: 190px;
+		margin: 0 auto 30px auto;
+	}
+
+	#hatcheryPicTwo
+	{
+		display: block;
+		width: 260px;
+		height: 190px;
+		margin: 0 auto 30px auto;
+	}
+
+	#hatcheryPicThree
+	{
+		display: block;
+		width: 260px;
+		height: 190px;
+		margin: 0 auto 30px auto;
+	}
+
+	#hatcheryArticle p
+	{
+		margin-bottom: 30px;
+	}
+
+	#hatcheryArticle span
+	{
+		display: block;
+		color: #595959;
+	}
+
+	.incubationImages
+	{
+		display: flex;
+		flex-direction: row;
+	}
+
+	#incubationPicOne
+	{
+		display: block;
+		width: 260px;
+		height: 190px;
+		margin: 30px auto 30px auto;
+	}
+
+	#incubationPicTwo
+	{
+		width: 260px;
+		height: 190px;
+		margin-top: 0;
+		margin: 30px auto 30px auto;
+	}
+
+	#incubationPicThree
+	{
+		display: block;
+		width: 260px;
+		height: 190px;
+		margin: 30px auto 0 auto;
+	}
+
+	#incubationPicFour
+	{
+		display: block;
+		width: 260px;
+		height: 190px;
+		margin-top: 0;
+		margin: 30px auto 0 auto;
+	}
+
+	#eggIncubationTwo p 
+	{
+		display: block;
+	}
+
+	#eggIncubationTwo p
+	{
+		font-size: 18px;
+		font-family: 'maiandra_gdregular';
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#waterSpring
+	{
+		display: block;
+		margin: 0 auto 0 auto;
+		width: 260px;
+		height: 190px;
+	}
+}
+
+/*Contact Page*/
+
+#contactTraa h2
+{
+	color: #006600;
+	font-family: 'modern_no20';
+	font-size: 24px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+#contactTraa p
+{
+	font-family: 'maiandra_gdregular';
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+#contactTraa p span
+{
+	color: #595959;
+}
+
+#contactForms
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#emailForm
+{
+	padding-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+#commentForm
+{
+	padding-bottom: 80px;
+	margin-bottom: 10px;
+}
+
+#securityQuestion
+{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+#submitButton
+{
+	display: block;
+	margin: 10px auto 0 auto;
+	width: 250px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #006600;
+	color: white;
+	font-family: 'maiandra_gdregular';
+}
+
+#traaMeeting h2
+{
+	color: #006600;
+	font-family: 'modern_no20';
+	font-size: 24px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+
+#traaMeeting p
+{
+	font-family: 'maiandra_gdregular';
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1020px){
+
+	#contactTraa
+	{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 20px;
+	}
+
+	#contactTraa div
+	{
+		width: 660px;
+	}
+
+	#contactTraa div h2
+	{
+		text-align: left
+	}
+
+	#contactTraa div p
+	{
+		margin-top: 25px;
+	}
+
+	#contactTraa img
+	{
+		width: 310px;
+		height: 310px;
+		margin-left: auto;
+	}
+
+	#contactForms
+	{
+		margin-bottom: 15px;
+	}
+
+	#contactForms input
+	{
+		width: 750px;
+		margin: 30px 0 30px 0;
+	}
+
+	#commentForm
+	{
+		height: 100px;
+	}
+
+	#traaMeeting h2
+	{
+		text-align: left;
+		margin-top: 40px;
+	}
+
+}
+
+/*Footer*/
+
+#footerNav
+{
+	margin-top: 20px;
+}
+
+#footerIcons img
+{
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
